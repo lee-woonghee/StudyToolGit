@@ -1,0 +1,43 @@
+■インストール済みから 2019-04-24
+
+1. ユーザー全体設定
+$ git config —global user.name “ユーザー名”
+$ git config —global user.email メールアドレス
+—global : 全体設定
+~/.gitconfigに設定される。ディレクトリのファイルを直接修正しても良い。
+
+2. ユーザープロジェクト毎設定
+$ git config —local user.name “ユーザー名”
+$ git config —local user.email メールアドレス
+—local : プロジェクト毎設定
+設定する前、設定したいディレクトリに移動が必要
+cd ディレクトリ で移動する
+
+設定された内容は .git/configに設定される。
+ディレクトリのファイルを直接修正しても良い。
+
+※fatal: —local can only be used inside a git repository
+そのディレクトリへ
+$ git initが必要：ディレクトリへ基礎ファイルが生成される（プロジェクト認識？）
+
+3. 設定確定
+$ git commit
+
+■ユーザー確認、更新、削除 2019-04-25
+
+$ git config —global —list
+設定の一覧を表示する
+
+$ git config {key}
+{key}で特定のキーの値を入力すると該当する項目が確認できる。
+ex) $ git config user.name
+
+$ git config キー名 設定値
+キーの設定を変更する。
+—globalオプション可
+ユーザー名なども更新が可能
+
+$ git config —unset キー名
+キー設定を削除する
+—globalオプション可
+ユーザー名なども削除が可能
