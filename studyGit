@@ -41,3 +41,21 @@ $ git config —unset キー名
 キー設定を削除する
 —globalオプション可
 ユーザー名なども削除が可能
+
+■Githubからlocalに同期化 2019-04-30
+
+①Githubへ接続し、同期化したいディレクトリへ移動
+②該当するRepositoryに移動し、Clone or DownloadのURLをコピーする。
+③gitから次のコマンドを入力
+$ git clone ディレクトリ名
+
+■localで作成したファイルをpushする。
+①変更したファイルを追加(インデックスの段階)
+$ git add ファイル名
+$ git add * : ディレクトリの全てのファイル
+②変更したファイルをHEADに反映する。(Githubには反映前)
+$ git commit -m "コメント"
+③githubにpushをする。
+※既存のgithubからcloneされていること。
+$ git push origin branch名
+ex) masterをpushする：$ git push origin master
