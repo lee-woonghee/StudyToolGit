@@ -1,0 +1,13 @@
+★Study kotlin★
+
+1. インストールとツール - 2019/05/01
+①eclipseにpluginでインストールする　⇒　決定
+②Intellijをインストール
+③Android Studioをインストール
+
+1.①インストールの流れ - 2019/05/01
+①JDKをインストール
+②eclipseをインストール
+③eclipseでJDKを認識される(javaw.exeを指定)
+④eclipseのMaketplaceからkotlinを検索
+⑤kotlinというpluginをダウンロードする
