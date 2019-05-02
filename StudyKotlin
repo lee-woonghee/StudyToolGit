@@ -11,3 +11,5 @@
 ③eclipseでJDKを認識される(javaw.exeを指定)
 ④eclipseのMaketplaceからkotlinを検索
 ⑤kotlinというpluginをダウンロードする
+
+2. javaとの違い
